@@ -9,9 +9,9 @@ class TablesSuite extends mutable.Specification {
   
   def createSchema(implicit session: Session) = {
     if (MTable.getTables(suppliers.baseTableRow.tableName).list.isEmpty)
-      suppliers.ddl.create
+      suppliers.schema.create
     if (MTable.getTables(coffees.baseTableRow.tableName).list.isEmpty)
-      coffees.ddl.create
+      coffees.schema.create
   }
   
   def insertSupplier(implicit session: Session) = 

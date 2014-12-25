@@ -14,3 +14,5 @@ libraryDependencies ++= Seq(
   "com.h2database"     %  "h2"          % "1.4.184",
   "org.specs2"         %% "specs2-core" % "2.4.15" % "test"
 )
+
+scalacOptions += "-deprecation"
